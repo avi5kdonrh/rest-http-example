@@ -1,0 +1,13 @@
+server:
+  ssl:
+    enabled-protocols:
+      - TLSv1.2
+    key-store: classpath:dataflow.keystore
+    key-alias: dataflow
+    key-password: dataflow
+    key-store-password: dataflow
+    enabled: true
+
+resteasy:
+  jaxrs:
+    defaultpath: /api
